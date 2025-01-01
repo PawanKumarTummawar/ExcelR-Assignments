@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Loops, Operators, and Conditions</title>
+    </head>
+    <body>
+        <h1>Please check the Console for the Output</h1>
+        <script>
+            // Example of conditional statements and comparison operators
+            let num1 = 20;
+            if (num1 > 10) {
+                console.log('Num1 is greater');
+            } else {
+                console.log('Num1 is smaller or equal');
+            }
+
+            // Example of while loop
+            let i = 1;
+            while (i <= 5) {
+                console.log('While loop iteration ' + i);
+                i++;
+            }
+
+            // Example of for loop
+            for (let j = 1; j <= 5; j++) {
+                console.log('For loop iteration ' + j);
+            }
+
+            // Example of a do-while loop
+            let k = 1;
+            do {
+                console.log('Do-While loop iteration ' + k);
+                k++;
+            } while (k <= 5);
+
+            // Example of a switch statement
+            let day = new Date().getDay();
+            switch (day) {
+                case 0:
+                    console.log("It's Sunday");
+                    break;
+                case 1:
+                    console.log("It's Monday");
+                    break;
+                case 2:
+                    console.log("It's Tuesday");
+                    break;
+                case 3:
+                    console.log("It's Wednesday");
+                    break;
+                case 4:
+                    console.log("It's Thursday");
+                    break;
+                case 5:
+                    console.log("It's Friday");
+                    break;
+                case 6:
+                    console.log("It's Saturday");
+                    break;
+                default:
+                    console.log('Invalid day');
+            }
+        </script>
+    </body>
+</html>

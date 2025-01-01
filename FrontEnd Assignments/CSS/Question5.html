@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex-Box</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+            .container {
+                height: 100%;
+                /* display: grid; */
+                /* grid-template-columns: repeat(7, 1fr); */
+                background: linear-gradient(120deg, #e667e6, #6e359d 70.71%);
+                width: 100%;
+            }
+            .box {
+                background: linear-gradient(
+                    120deg,
+                    rgb(249, 212, 2),
+                    rgb(245, 145, 4) 70.71%
+                );
+                width: 150px;
+                height: 150px;
+                border: 2px solid;
+                margin: 10px;
+                display: flex;
+            }
+
+            .sub {
+                width: 35px;
+                height: 35px;
+                font-size: 10px;
+                background: linear-gradient(120deg, rgb(125, 182, 201), blue);
+                border: 2px solid;
+            }
+            .center {
+                justify-content: center;
+            }
+            .end {
+                justify-content: flex-end;
+            }
+            .space-around {
+                justify-content: space-around;
+            }
+            .space-between {
+                justify-content: space-between;
+            }
+            .space-evenly {
+                justify-content: space-evenly;
+            }
+            .vertical-start {
+                align-items: flex-start;
+            }
+            .vertical-center {
+                align-items: center;
+            }
+            .vertical-end {
+                align-items: flex-end;
+            }
+            .vertical-horizontal-center {
+                justify-content: center;
+                align-items: center;
+            }
+            .horizontal-vertical-end {
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            .row-2 {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .row-1 {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row-1">
+                <div class="box">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box center">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box end">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box space-around">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box space-between">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box space-evenly">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box vertical-start">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="box vertical-center">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box vertical-end">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box vertical-horizontal-center">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+                <div class="box horizontal-vertical-end">
+                    <div class="sub">Box1</div>
+                    <div class="sub">Box2</div>
+                    <div class="sub">Box3</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
